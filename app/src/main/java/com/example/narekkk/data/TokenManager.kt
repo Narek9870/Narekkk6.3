@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
 import java.io.IOException
 
-// Создаем инстанс DataStore
+// Создаем DataStore
 private val Context.dataStore by preferencesDataStore(name = "auth_prefs")
 
 class TokenManager(private val context: Context) {
