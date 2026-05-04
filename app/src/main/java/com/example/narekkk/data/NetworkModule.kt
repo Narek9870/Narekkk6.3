@@ -32,7 +32,7 @@ object NetworkModule {
                     loadTokens {
                         val token = tokenManager.getToken().firstOrNull()
                         if (token != null) {
-                            BearerTokens(token, "") // В этом API нет refresh-токена
+                            BearerTokens(token, "") // В этом нет токена
                         } else null
                     }
                     sendWithoutRequest { true } //Отправляем токен сразу, не дожидаясь ошибки сервера
