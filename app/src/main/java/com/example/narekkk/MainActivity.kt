@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Инициализируем наш модуль и передаем ему Контекст (чтобы DataStore работал)
+        // Инициализируем наш модуль и передаем ему(чтобы DataStore работал)
         AppModule.init(applicationContext)
 
         enableEdgeToEdge()
